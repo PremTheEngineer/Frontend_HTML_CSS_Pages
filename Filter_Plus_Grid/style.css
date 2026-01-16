@@ -121,7 +121,8 @@ body {
   padding: 2rem;
 }
 .right-content {
-  width: 100%;
+  flex: 1;
+  min-width: 0;
 }
 .right-top {
   display: flex;

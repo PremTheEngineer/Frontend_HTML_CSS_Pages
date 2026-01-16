@@ -3,8 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  height: 100vh;
+html, body {
+  height: 100%;
 }
 .container {
   display: flex;
@@ -12,7 +12,7 @@ body {
 }
 /* Left Section */
 .sidebar {
-  flex-grow: 1;
+  width: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -38,7 +38,7 @@ body {
 }
 /* Main Section */
 .main-content {
-  flex-grow: 5;
+  flex: 1;
 }
 .header {
   width: 100%;
@@ -58,7 +58,7 @@ body {
 }
 /* Right Section */
 .right-nav {
-  flex-grow: 1;
+  width: 20rem;
   padding: 1rem;
   border-left: 0.5px solid rgb(229 229 229);
 }
