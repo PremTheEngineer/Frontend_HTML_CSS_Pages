@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI Layouts Assignment</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        background-color: #f5f5f5;
+        padding: 2rem;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      }
+
+      h1 {
+        margin-bottom: 0.5rem;
+      }
+
+      .info {
+        margin-bottom: 2rem;
+        color: #555;
+        line-height: 1.6;
+      }
+
+      ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1rem;
+      }
+
+      li a {
+        display: block;
+        padding: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        text-decoration: none;
+        color: #111;
+        background-color: #fafafa;
+        transition: background 0.2s, box-shadow 0.2s;
+      }
+
+      li a:hover {
+        background-color: #f0f0f0;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>UI Layouts Assignment</h1>
+
+      <p class="info">
+        <strong>Prem Bhatt</strong><br />
+        This is my assignment showcasing various UI pages built using
+        <strong>HTML and CSS only</strong>.<br />
+        Live URL:
+        <a href="https://6hm32p-5173.csb.app/" target="_blank">
+          https://6hm32p-5173.csb.app/
+        </a>
+      </p>
+
+      <ul>
+        <li><a href="./3_Column_Feed/index.html">3 Column Feed</a></li>
+        <li><a href="./border-top-loader/index.html">Dashboard KPI (Just the Loader)</a></li>
+        <li><a href="./Calender/index.html">Calendar</a></li>
+        <li><a href="./Chat_Messanger/index.html">Chat Messenger</a></li>
+        <li><a href="./Data_Table/index.html">Data Table</a></li>
+        <li><a href="./Filter_Plus_Grid/index.html">Filter Plus Grid</a></li>
+        <li><a href="./Form_Builder/index.html">Form Builder</a></li>
+        <li><a href="./Kanban_Board/index.html">Kanban Board</a></li>
+        <li><a href="./Live_Score/index.html">Live Score</a></li>
+        <li><a href="./Map_Plus_List_Split/index.html">Map Plus List Split</a></li>
+        <li><a href="./Sidebar_Plus_Content/index.html">Sidebar Plus Content</a></li>
+        <li><a href="./Video_Player/index.html">Video Player</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
