@@ -122,6 +122,9 @@ html, body {
     background-color: var(--dark-grey);
     height: 3rem;
 }
+.table {
+    padding: 0 1rem;
+}
 table {
     border-collapse: collapse;
     border-spacing: 0.5rem 1rem;
