@@ -1,0 +1,214 @@
+:root {
+  --black-btn-clr: #171717;
+  --light-grey: #f5f5f5;
+  --normal-grey: #e5e5e5;
+  --dark-grey: #d4d4d4;
+  --border-clr: rgb(229, 231, 235);
+  --super-dark-grey: #a3a3a3;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+.container {
+    height: 100%;
+    display: flex;
+}
+.left {
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-right: 1px solid var(--border-clr);
+    gap: 1rem;
+}
+.left > .button {
+    width: 7rem;
+    height: 2.5rem;
+    background-color: var(--black-btn-clr);
+    border-radius : 0.25rem;
+}
+.left > .calender-mini {
+    height: 14rem;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    border-bottom: 1px solid var(--border-clr);
+}
+.S, .M, .T, .W, .T, .F, .S {
+    color: grey;
+}
+.date, .S, .M, .T, .W, .T, .F, .S {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d-17 {
+    background-color: var(--black-btn-clr);
+    color: white;
+    border-radius: 1rem;
+    height: 1.5rem;
+}
+.schedules {
+    display: flex;
+    flex-direction: column ;
+    gap: 0.5rem;
+}
+.schedules > .button {
+    height: 1rem;
+    width: 5rem;
+    background-color: var(--normal-grey);
+}
+.schedules > .row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.schedules .icon {
+    height: 0.75rem;;
+    width: 0.75rem;
+    background-color: var(--super-dark-grey);
+    border-radius : 0.25rem;
+}
+.schedules > .row > .text {
+    height: 1rem;
+    flex: 1;
+    background-color: var(--light-grey);
+    border-radius : 0.25rem;
+}
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.right > .header {
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    border-bottom: 1px solid var(--border-clr);
+}
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.header-left > .box {
+    height: 2rem;
+    width: 2rem;
+    border-radius : 0.25rem;
+    background-color: var(--normal-grey);
+}
+.header-left > .rectangle {
+    width: 8rem;
+    height: 1.5rem;
+    border-radius : 0.25rem;
+    background-color: var(--normal-grey);
+}
+.header-right {
+    display: flex;
+    width: 12rem;
+    height: 2.25rem;
+    gap: 4px;
+    padding: 4px;
+    background-color: var(--light-grey);
+    border-radius : 0.25rem;
+}
+.header-right > .rectangle {
+    width: 4rem;
+    height: 1.75rem;
+    background-color: white;
+    border-radius : 0.25rem;
+}
+/* Main Calender */
+.content {
+    flex: 1;
+    display: flex;
+}
+.left-timeline {
+    display: flex;
+    flex-direction: column;
+    width: 4rem;
+    border: 1px solid var(--border-clr);
+}
+.left-timeline > .time {
+    font-size: 12px;
+    flex: 1;
+    color: grey;
+    padding: 4px 8px 0 0;
+    width: 4rem;
+    display: flex;
+    justify-content: end;
+    border-bottom: 1px solid var(--border-clr);
+}
+.events {
+    display: flex;
+    flex: 1;
+}
+.week-day {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-right: 1px solid var(--border-clr);
+}
+.day-date {
+    height: 3rem;
+    border-bottom: 1px solid var(--border-clr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.day-day {
+    font-size: 12px;
+    color: grey;
+}
+.date-date {
+    font-size: 14px;
+}
+.date-date.date-17 {
+    background-color: var(--black-btn-clr);
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+.task-16 {
+    height: 4rem;
+    width: 96%;
+    margin: 4px;
+    border-radius : 0.25rem;
+    background-color: var(--normal-grey);
+    margin-top: 3rem;
+}
+.task-17 {
+    height: 4rem;
+    width: 96%;
+    margin: 4px;
+    border-radius : 0.25rem;
+    background-color: var(--black-btn-clr);
+    margin-top: 8rem;
+}
+.task-19 {
+    height: 4rem;
+    width: 96%;
+    margin: 4px;
+    border-radius : 0.25rem;
+    background-color: var(--dark-grey);
+    margin-top: 0.8rem;
+}
+
+
+
+
+
+
+.three-five {
+    height: 4.5rem;
+}
