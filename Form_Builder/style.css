@@ -114,7 +114,7 @@ body {
   background-color: var(--normal-grey);
 }
 .mid-content {
-  background-color: var(--normal-grey);
+  background-color: var(--light-grey);
   display: flex;
   flex: 1;
   justify-content: center;
@@ -127,6 +127,7 @@ body {
   background-color: white;
   border-radius: 1rem;
   padding: 2rem;
+  box-shadow: 1px 1px 2px rgb(214, 208, 208);
 }
 .mid-content-form > .text {
     height: 1.5rem;
