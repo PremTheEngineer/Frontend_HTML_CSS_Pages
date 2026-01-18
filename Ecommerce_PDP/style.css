@@ -1,0 +1,227 @@
+:root {
+  --black: #171717;
+  --black-grey: #404040;
+  --black-dark-grey: #262626;
+  --light-grey: #f5f5f5;
+  --normal-grey: #e5e5e5;
+  --dark-grey: #d4d4d4;
+  --border-clr: rgb(229, 231, 235);
+  --super-dark-grey: #a3a3a3;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.rounded {
+  border-radius: 0.25rem;
+}
+.rounded-xl {
+  border-radius: 0.5rem;
+}
+.separator {
+  height: 1px;
+  border-top: 1px solid var(--border-clr);
+}
+.border-bottom {
+  border-bottom: 1px solid var(--border-clr);
+}
+.border-right {
+  border-right: 1px solid var(--border-clr);
+}
+.border {
+  border: 1px solid var(--dark-grey);
+}
+html,
+body {
+  height: 100%;
+}
+/* CONTAINER */
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.container > .header {
+  height: 56px;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--black);
+}
+
+.container > .header > .rectangle-small {
+  width: 96px;
+  height: 32px;
+  background-color: var(--black-grey);
+}
+
+.container > .header > .rectangle-big {
+  width: 672px;
+  height: 40px;
+  background-color: var(--black-dark-grey);
+}
+
+.container > .header > .box {
+  width: 32px;
+  height: 32px;
+  background-color: var(--black-grey);
+}
+
+/* MAIN CONTENT */
+.container > .content {
+  flex: 1;
+  display: flex;
+}
+
+/* LEFT SIDE */
+.container > .content > .content-left {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-right: 1px solid var(--border-clr);
+}
+
+.container > .content > .content-left > .vertical-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.container > .content > .content-left > .vertical-tab > .box {
+  width: 80px;
+  height: 80px;
+  background-color: var(--normal-grey);
+}
+
+.container > .content > .content-left > .vertical-tab > .box.black-border {
+  border: 2px solid black;
+}
+
+.container > .content > .content-left > .product-screen {
+  flex: 1;
+  background-color: var(--light-grey);
+}
+
+/* RIGHT SIDE */
+.container > .content > .content-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+/* RECTANGLES */
+.container > .content > .content-right > .rect-1 {
+  width: 96px;
+  height: 16px;
+  background-color: var(--normal-grey);
+}
+
+.container > .content > .content-right > .rect-2 {
+  height: 32px;
+  width: 100%;
+  background-color: var(--normal-grey);
+}
+
+.container > .content > .content-right > .rect-3 {
+  width: 192px;
+  height: 1.5rem;
+  background-color: var(--light-grey);
+}
+
+.container > .content > .content-right > .rect-4 {
+  width: 128px;
+  height: 40px;
+  background-color: var(--dark-grey);
+}
+
+.container > .content > .content-right > .rect-5 {
+  width: 160px;
+  height: 16px;
+  background-color: var(--light-grey);
+}
+
+/* RECT 6 */
+.container > .content > .content-right > .rect-6 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.container > .content > .content-right > .rect-6 > .up {
+  width: 64px;
+  height: 20px;
+  background-color: var(--normal-grey);
+}
+
+.container > .content > .content-right > .rect-6 > .dn {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.container > .content > .content-right > .rect-6 > .dn > div {
+  width: 40px;
+  height: 40px;
+  background-color: var(--light-grey);
+}
+.container > .content > .content-right > .rect-6 > .dn > .box-1 {
+  background-color: var(--normal-grey);
+}
+.container > .content > .content-right > .rect-6 > .dn > .black-border {
+  border: 2px solid var(--black);
+}
+
+/* RECT 7 */
+.container > .content > .content-right > .rect-7 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.container > .content > .content-right > .rect-7 > .up {
+  width: 48px;
+  height: 20px;
+  background-color: var(--normal-grey);
+}
+
+.container > .content > .content-right > .rect-7 > .dn {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.container > .content > .content-right > .rect-7 > .dn > div {
+  width: 48px;
+  height: 40px;
+  background-color: white;
+  border: 2px solid var(--border-clr);
+}
+
+.container > .content > .content-right > .rect-7 > .dn > .black-border {
+  border: 2px solid var(--black-btn-clr);
+}
+
+/* RECT 8 */
+.container > .content > .content-right > .rect-8 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 18px;
+}
+
+.container > .content > .content-right > .rect-8 > .big-rect {
+  flex: 1;
+  height: 48px;
+  background-color: var(--black);
+}
+
+.container > .content > .content-right > .rect-8 > .box {
+  width: 48px;
+  height: 48px;
+  background-color: var(--normal-grey);
+}
