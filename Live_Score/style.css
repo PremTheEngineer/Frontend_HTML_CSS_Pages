@@ -76,7 +76,7 @@ html, body {
 .score > .left > .box {
     height: 3rem;
     width: 3rem;
-    background-color: var(--mid-grey);
+    background-color: #525252;
     border-radius: 0.5rem;
 }
 .score > .left > .score-stat {
@@ -87,13 +87,13 @@ html, body {
 .score > .left > .score-stat > .up {
     height: 1.25rem;
     width: 5rem;
-    background-color: var(--mid-grey);
+    background-color: #525252;
     border-radius: 0.25rem;
 }
 .score > .left > .score-stat > .dn {
     height: 2rem;
     width: 7rem;
-    background-color: var(--dark-grey);
+    background-color: #737373;
     border-radius: 0.25rem;
 }
 .score > .right {
@@ -106,7 +106,7 @@ html, body {
 .score > .right > .box {
     height: 3rem;
     width: 3rem;
-    background-color: var(--mid-grey);
+    background-color: #525252;
     border-radius: 0.5rem;
 }
 .score > .right > .score-stat {
@@ -118,13 +118,13 @@ html, body {
     height: 1.25rem;
     width: 5rem;
     margin-left: auto;
-    background-color: var(--mid-grey);
+    background-color: #525252;
     border-radius: 0.25rem;
 }
 .score > .right > .score-stat > .dn {
     height: 2rem;
     width: 7rem;
-    background-color: var(--dark-grey);
+    background-color: #737373;
     border-radius: 0.25rem;
 }
 .score > .mid {
@@ -143,7 +143,7 @@ html, body {
 .score > .mid > .up > .up-up {
     height: 1rem;
     width: 4rem;
-    background-color: var(--mid-grey);
+    background-color: #525252;
     border-radius: 0.25rem;
 }
 .score > .mid > .up > .up-dn {
@@ -155,7 +155,7 @@ html, body {
 .score > .mid > .dn {
     height: 1.25rem;
     width: 14rem;
-    background-color: var(--mid-grey);
+    background-color: #525252;
     border-radius: 0.25rem;
 }
 /* Content */
@@ -179,7 +179,7 @@ html, body {
 .left-header > .box {
     height: 2rem;
     width: 6rem;
-    background-color: var(--normal-grey);
+    background-color: var(--light-grey);
     border-radius: 0.25rem;
 }
 .left-content {
@@ -196,7 +196,7 @@ html, body {
 .content-row > .left {
     height: 1rem;
     width: 12rem;
-    background-color: var(--dark-grey);
+    background-color: var(--normal-grey);
      border-radius: 0.25rem;
 }
 .content-row > .right {
