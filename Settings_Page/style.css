@@ -1,0 +1,181 @@
+:root {
+  --black-btn-clr: #171717;
+  --light-grey: #f5f5f5;
+  --normal-grey: #e5e5e5;
+  --dark-grey: #d4d4d4;
+  --darkest-grey: #a3a3a3;
+  --black-grey: #404040;
+  --border-clr: rgb(229, 231, 235);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.rounded {
+  border-radius: 0.25rem;
+}
+.container {
+  height: 100%;
+  display: flex;
+}
+/* Left */
+.container > .left {
+  width: 16rem;
+  border-right: 1px solid var(--border-clr);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+.left-heading {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--light-grey);
+  padding: 0 12px;
+}
+.left-heading > .box {
+  height: 1rem;
+  width: 100%;
+  background-color: var(--normal-grey);
+}
+.left-content.big {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--normal-grey);
+  padding: 0 12px;
+}
+.left-content.big > .box {
+  height: 1rem;
+  width: 6rem;
+  background-color: var(--darkest-grey);
+}
+.left-content.undelect {
+  padding: 0 14px;
+  height: 1rem;
+  margin-bottom: 0.5rem;
+}
+.left-content.undelect > .box {
+  height: 1rem;
+  width: 6rem;
+  background-color: var(--normal-grey);
+}
+/* Content */
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.right > .header {
+  height: 3.5rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border-clr);
+}
+.right > .header > .rectangle {
+  height: 1.5rem;
+  width: 6rem;
+  background-color: var(--dark-grey);
+}
+/* Right content */
+.right > .content {
+  padding: 1rem;
+  flex: 1;
+}
+
+.right > .content > .up {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 672px;
+  border-bottom: 1px solid var(--border-clr);
+  padding-bottom: 1.5rem;
+}
+.right > .content > .up > .setting {
+  height: 1.25rem;
+  width: 8rem;
+  background-color: var(--dark-grey);
+}
+.right > .content > .up > .setting-configs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.right > .content > .up > .setting-configs > .left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.right > .content > .up > .setting-configs > .left > .up {
+  height: 1rem;
+  width: 6rem;
+  background-color: var(--normal-grey);
+}
+.right > .content > .up > .setting-configs > .left > .dn {
+  height: 0.75rem;
+  width: 12rem;
+  background-color: var(--light-grey);
+}
+.right > .content > .up > .setting-configs > .rightss {
+  height: 2.5rem;
+  background-color: var(--light-grey);
+}
+.right > .content > .mid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 672px;
+  border-bottom: 1px solid var(--border-clr);
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+.right > .content > .mid > .heading {
+  height: 1.25rem;
+  width: 7rem;
+  background-color: var(--dark-grey);
+}
+.right > .content > .mid > .mid-configs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.right > .content > .mid > .mid-configs > .left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.right > .content > .mid > .mid-configs > .left > .up {
+  height: 1rem;
+  width: 7rem;
+  background-color: var(--normal-grey);
+}
+.right > .content > .mid > .mid-configs > .left > .dn {
+  height: 0.75rem;
+  width: 12rem;
+  background-color: var(--light-grey);
+}
+.right > .content > .mid > .mid-configs > .right-pill {
+    width: 3rem;
+    height: 1.5rem;
+    background-color: var(--normal-grey);
+    border-radius: 2rem;
+}
+.right > .content > .dn {
+    height: 2.5rem;
+    max-width: 672px;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: end;
+    margin: 1.5rem 0;
+}
+.right > .content > .dn > .button {
+    width: 6rem;
+    background-color: var(--normal-grey);
+}
